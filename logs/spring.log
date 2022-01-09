@@ -1,0 +1,873 @@
+2021-12-17 11:22:02.176  WARN 10620 --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=16h46m18s764ms666µs900ns).
+2021-12-17 13:27:34.660  INFO 10620 --- [http-nio-8484-exec-1] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-17 13:27:34.666  INFO 10620 --- [http-nio-8484-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-17 13:27:34.722  INFO 10620 --- [http-nio-8484-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 56 ms
+2021-12-17 15:01:15.658  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Starting App on DESKTOP-4PO1N20 with PID 11152 (D:\Proyectos\Caem\caem-api\target\classes started by Alfredo in D:\Proyectos\Caem\caem-api)
+2021-12-17 15:01:15.772  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : The following profiles are active: local
+2021-12-17 15:01:15.914  INFO 11152 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-17 15:01:15.922  INFO 11152 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-17 15:01:16.220  WARN 11152 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-12-17 15:01:18.751  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 15:01:19.281  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 510ms. Found 46 repository interfaces.
+2021-12-17 15:01:20.130  INFO 11152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bab06e88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 15:01:21.253  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8484 (http)
+2021-12-17 15:01:21.319  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-17 15:01:21.320  INFO 11152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-12-17 15:01:21.712  INFO 11152 --- [restartedMain] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring embedded WebApplicationContext
+2021-12-17 15:01:21.714  INFO 11152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5790 ms
+2021-12-17 15:01:22.273  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-17 15:01:23.376  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-17 15:01:23.565  INFO 11152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 15:01:23.724  INFO 11152 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2021-12-17 15:01:23.727  INFO 11152 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-12-17 15:01:23.962  INFO 11152 --- [restartedMain] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2021-12-17 15:01:24.027  INFO 11152 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-12-17 15:01:24.487  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+2021-12-17 15:01:24.501  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQLSpatialDialect
+2021-12-17 15:01:25.171  WARN 11152 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [hibernate.ejb.interceptor], use [hibernate.session_factory.interceptor] instead
+2021-12-17 15:01:27.070  INFO 11152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 15:01:29.035  WARN 11152 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 15:01:29.621  INFO 11152 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-17 15:01:29.844  INFO 11152 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c40aadae-30b2-41f0-b904-e6f94fe8a0a4
+
+2021-12-17 15:01:30.020  INFO 11152 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35c92af, org.springframework.security.web.context.SecurityContextPersistenceFilter@350fff57, org.springframework.security.web.header.HeaderWriterFilter@3e5c0486, org.springframework.web.filter.CorsFilter@6cdb2985, org.springframework.security.web.authentication.logout.LogoutFilter@2d1e859f, com.geoit.caem.apirest.security.JWTAuthorizationFilter@79b079ee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56fa5a71, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@144b3d3b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e55f2d, org.springframework.security.web.session.SessionManagementFilter@1b73a963, org.springframework.security.web.access.ExceptionTranslationFilter@4d5bba12, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@773b22fb]
+2021-12-17 15:01:30.262  INFO 11152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-17 15:01:30.311  INFO 11152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-17 15:01:30.830  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-17 15:01:30.876  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-17 15:01:30.979  INFO 11152 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-17 15:01:31.374  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMiMunicipioUsingGET_1
+2021-12-17 15:01:31.382  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_1
+2021-12-17 15:01:31.395  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_1
+2021-12-17 15:01:31.424  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_1
+2021-12-17 15:01:31.455  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_1
+2021-12-17 15:01:31.511  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_1
+2021-12-17 15:01:31.585  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_2
+2021-12-17 15:01:31.590  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_2
+2021-12-17 15:01:31.593  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_2
+2021-12-17 15:01:31.621  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCatalogosUsingGET_1
+2021-12-17 15:01:31.645  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_2
+2021-12-17 15:01:31.653  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSeccionesUsingGET_1
+2021-12-17 15:01:31.724  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_2
+2021-12-17 15:01:31.874  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8484 (http) with context path '/caem-api'
+2021-12-17 15:01:31.884  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Started App in 17.166 seconds (JVM running for 19.141)
+2021-12-17 15:04:06.093  INFO 11152 --- [http-nio-8484-exec-2] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-17 15:04:06.094  INFO 11152 --- [http-nio-8484-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-17 15:04:06.115  INFO 11152 --- [http-nio-8484-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2021-12-17 15:04:09.037  INFO 11152 --- [http-nio-8484-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-12-17 15:04:17.737  WARN 11152 --- [http-nio-8484-exec-3] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [329] milliseconds.
+2021-12-17 16:27:58.323  INFO 11152 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-17 16:27:58.342  INFO 11152 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 16:27:58.354  INFO 11152 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-17 16:27:58.361  INFO 11152 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-17 16:28:15.700  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Starting App on DESKTOP-4PO1N20 with PID 11152 (D:\Proyectos\Caem\caem-api\target\classes started by Alfredo in D:\Proyectos\Caem\caem-api)
+2021-12-17 16:28:15.701  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : The following profiles are active: local
+2021-12-17 16:28:17.187  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 16:28:17.545  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 353ms. Found 46 repository interfaces.
+2021-12-17 16:28:17.857  INFO 11152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bab06e88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 16:28:17.986  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8484 (http)
+2021-12-17 16:28:17.988  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-17 16:28:17.990  INFO 11152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-12-17 16:28:18.032  INFO 11152 --- [restartedMain] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring embedded WebApplicationContext
+2021-12-17 16:28:18.033  INFO 11152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2326 ms
+2021-12-17 16:28:18.510  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-12-17 16:28:19.378  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-12-17 16:28:19.459  INFO 11152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 16:28:19.466  INFO 11152 --- [restartedMain] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2021-12-17 16:28:20.325  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+2021-12-17 16:28:20.327  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQLSpatialDialect
+2021-12-17 16:28:20.651  WARN 11152 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [hibernate.ejb.interceptor], use [hibernate.session_factory.interceptor] instead
+2021-12-17 16:28:21.628  INFO 11152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 16:28:23.333  WARN 11152 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 16:28:24.062  INFO 11152 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-17 16:28:24.098  INFO 11152 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0dda4d76-173b-427c-980d-45e144458db7
+
+2021-12-17 16:28:24.151  INFO 11152 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c589775, org.springframework.security.web.context.SecurityContextPersistenceFilter@12d91147, org.springframework.security.web.header.HeaderWriterFilter@50533881, org.springframework.web.filter.CorsFilter@56da711a, org.springframework.security.web.authentication.logout.LogoutFilter@7aa36535, com.geoit.caem.apirest.security.JWTAuthorizationFilter@2a768711, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b747f1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72aadfc3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6dd14d84, org.springframework.security.web.session.SessionManagementFilter@40290516, org.springframework.security.web.access.ExceptionTranslationFilter@34c3a8e8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@388e4fd8]
+2021-12-17 16:28:24.357  INFO 11152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-17 16:28:24.367  INFO 11152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-17 16:28:24.580  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-17 16:28:24.583  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-17 16:28:24.608  INFO 11152 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-17 16:28:25.453  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMiMunicipioUsingGET_1
+2021-12-17 16:28:25.770  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_1
+2021-12-17 16:28:25.806  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_1
+2021-12-17 16:28:25.857  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_1
+2021-12-17 16:28:25.867  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_1
+2021-12-17 16:28:25.908  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_1
+2021-12-17 16:28:25.930  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_2
+2021-12-17 16:28:25.951  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_2
+2021-12-17 16:28:25.972  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_2
+2021-12-17 16:28:25.999  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCatalogosUsingGET_1
+2021-12-17 16:28:26.038  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_2
+2021-12-17 16:28:26.043  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSeccionesUsingGET_1
+2021-12-17 16:28:26.101  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_2
+2021-12-17 16:28:26.152  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8484 (http) with context path '/caem-api'
+2021-12-17 16:28:26.153  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Started App in 10.553 seconds (JVM running for 5233.41)
+2021-12-17 16:28:26.159  INFO 11152 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-17 16:28:30.689  INFO 11152 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-17 16:28:30.751  INFO 11152 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 16:28:30.758  INFO 11152 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-12-17 16:28:30.769  INFO 11152 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-12-17 16:28:31.477  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Starting App on DESKTOP-4PO1N20 with PID 11152 (D:\Proyectos\Caem\caem-api\target\classes started by Alfredo in D:\Proyectos\Caem\caem-api)
+2021-12-17 16:28:31.557  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : The following profiles are active: local
+2021-12-17 16:28:34.756  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 16:28:35.353  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 587ms. Found 46 repository interfaces.
+2021-12-17 16:28:35.530  INFO 11152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bab06e88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 16:28:35.702  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8484 (http)
+2021-12-17 16:28:35.704  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-17 16:28:35.705  INFO 11152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-12-17 16:28:35.755  INFO 11152 --- [restartedMain] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring embedded WebApplicationContext
+2021-12-17 16:28:35.755  INFO 11152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4126 ms
+2021-12-17 16:28:36.036  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-12-17 16:28:37.182  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-12-17 16:28:37.256  INFO 11152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 16:28:37.732  INFO 11152 --- [restartedMain] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2021-12-17 16:28:38.208  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+2021-12-17 16:28:38.210  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQLSpatialDialect
+2021-12-17 16:28:38.379  WARN 11152 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [hibernate.ejb.interceptor], use [hibernate.session_factory.interceptor] instead
+2021-12-17 16:28:39.584  INFO 11152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 16:28:40.820  WARN 11152 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 16:28:41.210  INFO 11152 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-17 16:28:41.284  INFO 11152 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b616689c-5ed6-448a-a5e4-7dff546f03e6
+
+2021-12-17 16:28:41.303  INFO 11152 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11607220, org.springframework.security.web.context.SecurityContextPersistenceFilter@6514351c, org.springframework.security.web.header.HeaderWriterFilter@4fb367ec, org.springframework.web.filter.CorsFilter@d31613a, org.springframework.security.web.authentication.logout.LogoutFilter@457a2c72, com.geoit.caem.apirest.security.JWTAuthorizationFilter@6f3304af, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4198580, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50411ee8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76f21aa7, org.springframework.security.web.session.SessionManagementFilter@601eb604, org.springframework.security.web.access.ExceptionTranslationFilter@18ef206e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65b35b0c]
+2021-12-17 16:28:41.413  INFO 11152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-17 16:28:41.421  INFO 11152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-17 16:28:41.544  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-17 16:28:41.546  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-17 16:28:41.563  INFO 11152 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-17 16:28:41.731  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMiMunicipioUsingGET_1
+2021-12-17 16:28:41.736  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_1
+2021-12-17 16:28:41.739  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_1
+2021-12-17 16:28:41.741  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_1
+2021-12-17 16:28:41.744  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_1
+2021-12-17 16:28:41.779  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_1
+2021-12-17 16:28:41.789  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_2
+2021-12-17 16:28:41.797  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_2
+2021-12-17 16:28:41.807  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_2
+2021-12-17 16:28:41.818  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCatalogosUsingGET_1
+2021-12-17 16:28:41.835  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_2
+2021-12-17 16:28:41.837  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSeccionesUsingGET_1
+2021-12-17 16:28:41.862  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_2
+2021-12-17 16:28:41.907  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8484 (http) with context path '/caem-api'
+2021-12-17 16:28:41.910  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Started App in 10.538 seconds (JVM running for 5249.167)
+2021-12-17 16:28:41.918  INFO 11152 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-17 16:28:47.968  INFO 11152 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-17 16:28:47.975  INFO 11152 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 16:28:47.976  INFO 11152 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-12-17 16:28:47.990  INFO 11152 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-12-17 16:28:48.518  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Starting App on DESKTOP-4PO1N20 with PID 11152 (D:\Proyectos\Caem\caem-api\target\classes started by Alfredo in D:\Proyectos\Caem\caem-api)
+2021-12-17 16:28:48.518  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : The following profiles are active: local
+2021-12-17 16:28:49.934  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 16:28:50.189  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 253ms. Found 46 repository interfaces.
+2021-12-17 16:28:50.427  INFO 11152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bab06e88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 16:28:50.562  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8484 (http)
+2021-12-17 16:28:50.565  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-17 16:28:50.569  INFO 11152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-12-17 16:28:50.667  INFO 11152 --- [restartedMain] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring embedded WebApplicationContext
+2021-12-17 16:28:50.724  INFO 11152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2201 ms
+2021-12-17 16:28:50.990  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2021-12-17 16:28:52.205  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2021-12-17 16:28:52.299  INFO 11152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 16:28:52.308  INFO 11152 --- [restartedMain] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2021-12-17 16:28:52.669  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+2021-12-17 16:28:52.671  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQLSpatialDialect
+2021-12-17 16:28:52.936  WARN 11152 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [hibernate.ejb.interceptor], use [hibernate.session_factory.interceptor] instead
+2021-12-17 16:28:53.760  INFO 11152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 16:28:56.263  WARN 11152 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 16:28:56.694  INFO 11152 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-17 16:28:56.722  INFO 11152 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: bce63fcf-1fe6-46b4-9fee-33a40aea9152
+
+2021-12-17 16:28:56.735  INFO 11152 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46540454, org.springframework.security.web.context.SecurityContextPersistenceFilter@567e746f, org.springframework.security.web.header.HeaderWriterFilter@618f7cf8, org.springframework.web.filter.CorsFilter@418139c0, org.springframework.security.web.authentication.logout.LogoutFilter@1fc407c7, com.geoit.caem.apirest.security.JWTAuthorizationFilter@4670f3f7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ddef032, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ac37cd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33de385e, org.springframework.security.web.session.SessionManagementFilter@15b1a82f, org.springframework.security.web.access.ExceptionTranslationFilter@49805d77, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5c219eeb]
+2021-12-17 16:28:56.795  INFO 11152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-17 16:28:56.802  INFO 11152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-17 16:28:56.915  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-17 16:28:56.917  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-17 16:28:56.933  INFO 11152 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-17 16:28:57.092  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMiMunicipioUsingGET_1
+2021-12-17 16:28:57.097  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_1
+2021-12-17 16:28:57.100  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_1
+2021-12-17 16:28:57.110  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_1
+2021-12-17 16:28:57.113  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_1
+2021-12-17 16:28:57.134  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_1
+2021-12-17 16:28:57.162  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_2
+2021-12-17 16:28:57.167  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_2
+2021-12-17 16:28:57.179  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_2
+2021-12-17 16:28:57.190  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCatalogosUsingGET_1
+2021-12-17 16:28:57.200  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_2
+2021-12-17 16:28:57.202  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSeccionesUsingGET_1
+2021-12-17 16:28:57.236  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_2
+2021-12-17 16:28:57.272  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8484 (http) with context path '/caem-api'
+2021-12-17 16:28:57.280  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Started App in 8.845 seconds (JVM running for 5264.537)
+2021-12-17 16:28:57.285  INFO 11152 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-17 16:31:26.606  INFO 11152 --- [Thread-24] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-17 16:31:26.611  INFO 11152 --- [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 16:31:26.612  INFO 11152 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2021-12-17 16:31:26.621  INFO 11152 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2021-12-17 19:17:25.182  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Starting App on DESKTOP-4PO1N20 with PID 11152 (D:\Proyectos\Caem\caem-api\target\classes started by Alfredo in D:\Proyectos\Caem\caem-api)
+2021-12-17 19:17:25.184  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : The following profiles are active: local
+2021-12-17 19:17:27.398  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 19:17:28.228  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 780ms. Found 46 repository interfaces.
+2021-12-17 19:17:28.351  INFO 11152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bab06e88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 19:17:28.478  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8484 (http)
+2021-12-17 19:17:28.479  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-17 19:17:28.480  INFO 11152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-12-17 19:17:28.524  INFO 11152 --- [restartedMain] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring embedded WebApplicationContext
+2021-12-17 19:17:28.526  INFO 11152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3337 ms
+2021-12-17 19:17:28.751  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2021-12-17 19:17:29.544  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2021-12-17 19:17:29.598  INFO 11152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 19:17:29.610  INFO 11152 --- [restartedMain] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2021-12-17 19:17:30.650  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+2021-12-17 19:17:30.652  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQLSpatialDialect
+2021-12-17 19:17:31.126  WARN 11152 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [hibernate.ejb.interceptor], use [hibernate.session_factory.interceptor] instead
+2021-12-17 19:17:32.871  INFO 11152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 19:17:34.321  WARN 11152 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 19:17:34.688  INFO 11152 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-17 19:17:34.718  INFO 11152 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e853053e-9e13-4e28-8743-3ce8237c84a6
+
+2021-12-17 19:17:34.742  INFO 11152 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ac11a9e, org.springframework.security.web.context.SecurityContextPersistenceFilter@2ace705d, org.springframework.security.web.header.HeaderWriterFilter@2d84a860, org.springframework.web.filter.CorsFilter@12179b69, org.springframework.security.web.authentication.logout.LogoutFilter@361e58f8, com.geoit.caem.apirest.security.JWTAuthorizationFilter@7795721c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43b85c9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c74ea86, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bba8058, org.springframework.security.web.session.SessionManagementFilter@598c6b83, org.springframework.security.web.access.ExceptionTranslationFilter@2e000b76, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@682721bf]
+2021-12-17 19:17:34.816  INFO 11152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-17 19:17:34.825  INFO 11152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-17 19:17:35.006  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-17 19:17:35.007  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-17 19:17:35.025  INFO 11152 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-17 19:17:35.181  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMiMunicipioUsingGET_1
+2021-12-17 19:17:35.189  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_1
+2021-12-17 19:17:35.191  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_1
+2021-12-17 19:17:35.199  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_1
+2021-12-17 19:17:35.236  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_1
+2021-12-17 19:17:35.388  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_1
+2021-12-17 19:17:35.401  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_2
+2021-12-17 19:17:35.406  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_2
+2021-12-17 19:17:35.410  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_2
+2021-12-17 19:17:35.418  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCatalogosUsingGET_1
+2021-12-17 19:17:35.460  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_2
+2021-12-17 19:17:35.470  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSeccionesUsingGET_1
+2021-12-17 19:17:35.493  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_2
+2021-12-17 19:17:35.544  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8484 (http) with context path '/caem-api'
+2021-12-17 19:17:35.546  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Started App in 10.458 seconds (JVM running for 15382.803)
+2021-12-17 19:17:35.551  INFO 11152 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-17 19:17:47.166  INFO 11152 --- [Thread-30] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-17 19:17:47.187  INFO 11152 --- [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 19:17:47.188  INFO 11152 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2021-12-17 19:17:47.204  INFO 11152 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2021-12-17 19:17:48.327  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Starting App on DESKTOP-4PO1N20 with PID 11152 (D:\Proyectos\Caem\caem-api\target\classes started by Alfredo in D:\Proyectos\Caem\caem-api)
+2021-12-17 19:17:48.329  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : The following profiles are active: local
+2021-12-17 19:17:49.957  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 19:17:50.384  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 424ms. Found 46 repository interfaces.
+2021-12-17 19:17:50.537  INFO 11152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bab06e88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 19:17:50.708  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8484 (http)
+2021-12-17 19:17:50.709  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-17 19:17:50.710  INFO 11152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-12-17 19:17:50.795  INFO 11152 --- [restartedMain] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring embedded WebApplicationContext
+2021-12-17 19:17:50.797  INFO 11152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2462 ms
+2021-12-17 19:17:51.092  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2021-12-17 19:17:51.964  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2021-12-17 19:17:52.021  INFO 11152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 19:17:52.025  INFO 11152 --- [restartedMain] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2021-12-17 19:17:54.459  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+2021-12-17 19:17:54.460  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQLSpatialDialect
+2021-12-17 19:17:54.680  WARN 11152 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [hibernate.ejb.interceptor], use [hibernate.session_factory.interceptor] instead
+2021-12-17 19:17:56.296  INFO 11152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 19:17:58.054  WARN 11152 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 19:17:58.385  INFO 11152 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-17 19:17:58.424  INFO 11152 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8dc98fc2-9dce-4a5f-bff1-3d32f0e0169f
+
+2021-12-17 19:17:58.445  INFO 11152 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@257f418c, org.springframework.security.web.context.SecurityContextPersistenceFilter@63483083, org.springframework.security.web.header.HeaderWriterFilter@171813e2, org.springframework.web.filter.CorsFilter@7373520a, org.springframework.security.web.authentication.logout.LogoutFilter@61e6a7f1, com.geoit.caem.apirest.security.JWTAuthorizationFilter@2c8c49c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1630bf3d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4160291a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@687b73de, org.springframework.security.web.session.SessionManagementFilter@286118e7, org.springframework.security.web.access.ExceptionTranslationFilter@bbfd649, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6557887]
+2021-12-17 19:17:58.696  INFO 11152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-17 19:17:58.769  INFO 11152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-17 19:17:59.402  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-17 19:17:59.410  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-17 19:17:59.508  INFO 11152 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-17 19:17:59.773  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMiMunicipioUsingGET_1
+2021-12-17 19:17:59.784  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_1
+2021-12-17 19:17:59.788  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_1
+2021-12-17 19:17:59.791  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_1
+2021-12-17 19:17:59.796  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_1
+2021-12-17 19:17:59.826  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_1
+2021-12-17 19:17:59.843  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_2
+2021-12-17 19:17:59.854  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_2
+2021-12-17 19:17:59.858  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_2
+2021-12-17 19:17:59.869  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCatalogosUsingGET_1
+2021-12-17 19:17:59.906  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_2
+2021-12-17 19:17:59.910  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSeccionesUsingGET_1
+2021-12-17 19:17:59.960  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_2
+2021-12-17 19:18:00.110  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8484 (http) with context path '/caem-api'
+2021-12-17 19:18:00.132  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Started App in 11.941 seconds (JVM running for 15407.389)
+2021-12-17 19:18:00.163  INFO 11152 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-17 19:41:20.123  INFO 11152 --- [Thread-45] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-17 19:41:20.135  INFO 11152 --- [Thread-45] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 19:41:20.152  INFO 11152 --- [Thread-45] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2021-12-17 19:41:20.256  INFO 11152 --- [Thread-45] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2021-12-17 19:41:48.517  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Starting App on DESKTOP-4PO1N20 with PID 11152 (D:\Proyectos\Caem\caem-api\target\classes started by Alfredo in D:\Proyectos\Caem\caem-api)
+2021-12-17 19:41:48.518  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : The following profiles are active: local
+2021-12-17 19:41:49.738  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 19:41:50.005  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 266ms. Found 46 repository interfaces.
+2021-12-17 19:41:50.142  INFO 11152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bab06e88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 19:41:50.325  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8484 (http)
+2021-12-17 19:41:50.335  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-17 19:41:50.336  INFO 11152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-12-17 19:41:50.392  INFO 11152 --- [restartedMain] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring embedded WebApplicationContext
+2021-12-17 19:41:50.393  INFO 11152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1871 ms
+2021-12-17 19:41:50.566  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2021-12-17 19:41:51.367  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2021-12-17 19:41:51.435  INFO 11152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 19:41:51.440  INFO 11152 --- [restartedMain] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2021-12-17 19:41:51.582  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+2021-12-17 19:41:51.584  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQLSpatialDialect
+2021-12-17 19:41:51.825  WARN 11152 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [hibernate.ejb.interceptor], use [hibernate.session_factory.interceptor] instead
+2021-12-17 19:41:52.490  INFO 11152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 19:41:53.260  WARN 11152 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 19:41:53.599  INFO 11152 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-17 19:41:53.626  INFO 11152 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6a7e7048-93d3-42ed-93ca-314ecdc5c31d
+
+2021-12-17 19:41:53.645  INFO 11152 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3358b38d, org.springframework.security.web.context.SecurityContextPersistenceFilter@4eb4d67e, org.springframework.security.web.header.HeaderWriterFilter@4a985d79, org.springframework.web.filter.CorsFilter@304fb8ca, org.springframework.security.web.authentication.logout.LogoutFilter@48d11211, com.geoit.caem.apirest.security.JWTAuthorizationFilter@774cea0e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ade47ee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7225be59, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@380e5400, org.springframework.security.web.session.SessionManagementFilter@7529ece0, org.springframework.security.web.access.ExceptionTranslationFilter@46ee4600, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4fe7c7cc]
+2021-12-17 19:41:53.716  INFO 11152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-17 19:41:53.722  INFO 11152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-17 19:41:53.877  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-17 19:41:53.883  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-17 19:41:53.922  INFO 11152 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-17 19:41:54.043  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMiMunicipioUsingGET_1
+2021-12-17 19:41:54.048  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_1
+2021-12-17 19:41:54.050  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_1
+2021-12-17 19:41:54.052  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_1
+2021-12-17 19:41:54.055  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_1
+2021-12-17 19:41:54.080  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_1
+2021-12-17 19:41:54.090  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_2
+2021-12-17 19:41:54.091  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_2
+2021-12-17 19:41:54.095  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_2
+2021-12-17 19:41:54.100  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCatalogosUsingGET_1
+2021-12-17 19:41:54.118  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_2
+2021-12-17 19:41:54.123  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSeccionesUsingGET_1
+2021-12-17 19:41:54.147  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_2
+2021-12-17 19:41:54.192  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8484 (http) with context path '/caem-api'
+2021-12-17 19:41:54.195  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Started App in 5.711 seconds (JVM running for 16841.452)
+2021-12-17 19:41:54.202  INFO 11152 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-17 19:42:05.046  INFO 11152 --- [Thread-51] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-17 19:42:05.230  INFO 11152 --- [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 19:42:05.242  INFO 11152 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2021-12-17 19:42:05.266  INFO 11152 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2021-12-17 19:42:06.479  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Starting App on DESKTOP-4PO1N20 with PID 11152 (D:\Proyectos\Caem\caem-api\target\classes started by Alfredo in D:\Proyectos\Caem\caem-api)
+2021-12-17 19:42:06.480  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : The following profiles are active: local
+2021-12-17 19:42:08.881  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 19:42:09.667  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 785ms. Found 46 repository interfaces.
+2021-12-17 19:42:10.154  INFO 11152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bab06e88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 19:42:10.568  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8484 (http)
+2021-12-17 19:42:10.570  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-17 19:42:10.571  INFO 11152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-12-17 19:42:10.674  INFO 11152 --- [restartedMain] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring embedded WebApplicationContext
+2021-12-17 19:42:10.689  INFO 11152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4199 ms
+2021-12-17 19:42:10.942  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2021-12-17 19:42:13.400  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2021-12-17 19:42:13.466  INFO 11152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 19:42:13.489  INFO 11152 --- [restartedMain] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2021-12-17 19:42:14.505  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+2021-12-17 19:42:14.541  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQLSpatialDialect
+2021-12-17 19:42:14.954  WARN 11152 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [hibernate.ejb.interceptor], use [hibernate.session_factory.interceptor] instead
+2021-12-17 19:42:16.042  INFO 11152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 19:42:17.377  WARN 11152 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 19:42:17.744  INFO 11152 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-17 19:42:17.817  INFO 11152 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c75f5533-9fc1-449d-90f1-5a8fe31093a0
+
+2021-12-17 19:42:17.847  INFO 11152 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@40d4fd02, org.springframework.security.web.context.SecurityContextPersistenceFilter@52736e4a, org.springframework.security.web.header.HeaderWriterFilter@42176588, org.springframework.web.filter.CorsFilter@797ad16c, org.springframework.security.web.authentication.logout.LogoutFilter@30461203, com.geoit.caem.apirest.security.JWTAuthorizationFilter@5ab694df, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ef67cca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@573467b9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16558c63, org.springframework.security.web.session.SessionManagementFilter@61c0caa6, org.springframework.security.web.access.ExceptionTranslationFilter@7830992f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@394ecdbc]
+2021-12-17 19:42:18.136  INFO 11152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-17 19:42:18.147  INFO 11152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-17 19:42:18.355  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-17 19:42:18.360  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-17 19:42:18.392  INFO 11152 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-17 19:42:18.603  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMiMunicipioUsingGET_1
+2021-12-17 19:42:18.623  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_1
+2021-12-17 19:42:18.637  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_1
+2021-12-17 19:42:18.645  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_1
+2021-12-17 19:42:18.657  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_1
+2021-12-17 19:42:18.769  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_1
+2021-12-17 19:42:18.927  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_2
+2021-12-17 19:42:19.069  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_2
+2021-12-17 19:42:19.104  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_2
+2021-12-17 19:42:19.135  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCatalogosUsingGET_1
+2021-12-17 19:42:19.165  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_2
+2021-12-17 19:42:19.178  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSeccionesUsingGET_1
+2021-12-17 19:42:19.223  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_2
+2021-12-17 19:42:19.310  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8484 (http) with context path '/caem-api'
+2021-12-17 19:42:19.316  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Started App in 13.198 seconds (JVM running for 16866.573)
+2021-12-17 19:42:19.328  INFO 11152 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-17 19:42:29.219  INFO 11152 --- [Thread-63] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-17 19:42:29.343  INFO 11152 --- [Thread-63] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 19:42:29.393  INFO 11152 --- [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2021-12-17 19:42:29.510  INFO 11152 --- [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2021-12-17 19:42:30.518  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Starting App on DESKTOP-4PO1N20 with PID 11152 (D:\Proyectos\Caem\caem-api\target\classes started by Alfredo in D:\Proyectos\Caem\caem-api)
+2021-12-17 19:42:30.520  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : The following profiles are active: local
+2021-12-17 19:42:32.014  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 19:42:32.435  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 420ms. Found 46 repository interfaces.
+2021-12-17 19:42:32.566  INFO 11152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bab06e88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 19:42:32.757  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8484 (http)
+2021-12-17 19:42:32.761  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-17 19:42:32.763  INFO 11152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-12-17 19:42:32.818  INFO 11152 --- [restartedMain] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring embedded WebApplicationContext
+2021-12-17 19:42:32.828  INFO 11152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2302 ms
+2021-12-17 19:42:33.171  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2021-12-17 19:42:35.042  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2021-12-17 19:42:35.862  INFO 11152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 19:42:35.865  INFO 11152 --- [restartedMain] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2021-12-17 19:42:36.148  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+2021-12-17 19:42:36.150  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQLSpatialDialect
+2021-12-17 19:42:36.487  WARN 11152 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [hibernate.ejb.interceptor], use [hibernate.session_factory.interceptor] instead
+2021-12-17 19:42:38.105  INFO 11152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 19:42:39.684  WARN 11152 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 19:42:40.218  INFO 11152 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-17 19:42:40.284  INFO 11152 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5ffe2986-83b2-41ef-a1ba-be573e17f593
+
+2021-12-17 19:42:40.314  INFO 11152 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@379b1ae4, org.springframework.security.web.context.SecurityContextPersistenceFilter@6cf1093b, org.springframework.security.web.header.HeaderWriterFilter@f22aef, org.springframework.web.filter.CorsFilter@37c7df6f, org.springframework.security.web.authentication.logout.LogoutFilter@7fc4c99b, com.geoit.caem.apirest.security.JWTAuthorizationFilter@ebf7da6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@355fcc0c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24eb2d1a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4014656e, org.springframework.security.web.session.SessionManagementFilter@59504498, org.springframework.security.web.access.ExceptionTranslationFilter@210f0f16, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b2477c5]
+2021-12-17 19:42:40.419  INFO 11152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-17 19:42:40.429  INFO 11152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-17 19:42:40.619  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-17 19:42:40.621  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-17 19:42:40.643  INFO 11152 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-17 19:42:40.771  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMiMunicipioUsingGET_1
+2021-12-17 19:42:40.784  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_1
+2021-12-17 19:42:40.787  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_1
+2021-12-17 19:42:40.809  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_1
+2021-12-17 19:42:40.817  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_1
+2021-12-17 19:42:41.004  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_1
+2021-12-17 19:42:41.073  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_2
+2021-12-17 19:42:41.076  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_2
+2021-12-17 19:42:41.077  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_2
+2021-12-17 19:42:41.083  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCatalogosUsingGET_1
+2021-12-17 19:42:41.125  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_2
+2021-12-17 19:42:41.138  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSeccionesUsingGET_1
+2021-12-17 19:42:41.169  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_2
+2021-12-17 19:42:41.208  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8484 (http) with context path '/caem-api'
+2021-12-17 19:42:41.245  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Started App in 10.83 seconds (JVM running for 16888.501)
+2021-12-17 19:42:41.248  INFO 11152 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-17 20:08:23.628  INFO 11152 --- [Thread-69] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-17 20:08:23.637  INFO 11152 --- [Thread-69] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 20:08:23.638  INFO 11152 --- [Thread-69] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2021-12-17 20:08:23.650  INFO 11152 --- [Thread-69] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2021-12-17 20:08:40.147  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Starting App on DESKTOP-4PO1N20 with PID 11152 (D:\Proyectos\Caem\caem-api\target\classes started by Alfredo in D:\Proyectos\Caem\caem-api)
+2021-12-17 20:08:40.147  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : The following profiles are active: local
+2021-12-17 20:08:41.119  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 20:08:41.391  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 259ms. Found 46 repository interfaces.
+2021-12-17 20:08:41.527  INFO 11152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bab06e88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 20:08:41.675  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8484 (http)
+2021-12-17 20:08:41.680  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-17 20:08:41.681  INFO 11152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-12-17 20:08:41.753  INFO 11152 --- [restartedMain] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring embedded WebApplicationContext
+2021-12-17 20:08:41.755  INFO 11152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1604 ms
+2021-12-17 20:08:42.111  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2021-12-17 20:08:42.881  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2021-12-17 20:08:42.920  INFO 11152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 20:08:42.927  INFO 11152 --- [restartedMain] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2021-12-17 20:08:43.077  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+2021-12-17 20:08:43.080  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQLSpatialDialect
+2021-12-17 20:08:43.502  WARN 11152 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [hibernate.ejb.interceptor], use [hibernate.session_factory.interceptor] instead
+2021-12-17 20:08:44.342  INFO 11152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 20:08:45.346  WARN 11152 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 20:08:45.851  INFO 11152 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-17 20:08:45.899  INFO 11152 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 19fd1f6c-ae92-4169-8877-1d050d21c58c
+
+2021-12-17 20:08:45.926  INFO 11152 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b28fe67, org.springframework.security.web.context.SecurityContextPersistenceFilter@21109320, org.springframework.security.web.header.HeaderWriterFilter@502dcaa5, org.springframework.web.filter.CorsFilter@3f23e3cb, org.springframework.security.web.authentication.logout.LogoutFilter@472818da, com.geoit.caem.apirest.security.JWTAuthorizationFilter@4fd3afa5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72e0672f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ca6e334, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@655437f2, org.springframework.security.web.session.SessionManagementFilter@67fd8f1d, org.springframework.security.web.access.ExceptionTranslationFilter@323c23fe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@15b43410]
+2021-12-17 20:08:46.131  INFO 11152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-17 20:08:46.138  INFO 11152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-17 20:08:46.477  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-17 20:08:46.572  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-17 20:08:46.657  INFO 11152 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-17 20:08:46.876  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMiMunicipioUsingGET_1
+2021-12-17 20:08:46.881  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_1
+2021-12-17 20:08:46.885  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_1
+2021-12-17 20:08:46.889  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_1
+2021-12-17 20:08:46.899  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_1
+2021-12-17 20:08:46.928  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_1
+2021-12-17 20:08:46.955  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_2
+2021-12-17 20:08:46.964  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_2
+2021-12-17 20:08:46.987  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_2
+2021-12-17 20:08:47.001  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCatalogosUsingGET_1
+2021-12-17 20:08:47.010  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_2
+2021-12-17 20:08:47.012  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSeccionesUsingGET_1
+2021-12-17 20:08:47.033  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_2
+2021-12-17 20:08:47.072  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8484 (http) with context path '/caem-api'
+2021-12-17 20:08:47.074  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Started App in 6.999 seconds (JVM running for 18454.331)
+2021-12-17 20:08:47.078  INFO 11152 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-17 20:08:52.494  INFO 11152 --- [Thread-75] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-17 20:08:52.533  INFO 11152 --- [Thread-75] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 20:08:52.535  INFO 11152 --- [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2021-12-17 20:08:52.548  INFO 11152 --- [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2021-12-17 20:08:53.235  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Starting App on DESKTOP-4PO1N20 with PID 11152 (D:\Proyectos\Caem\caem-api\target\classes started by Alfredo in D:\Proyectos\Caem\caem-api)
+2021-12-17 20:08:53.238  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : The following profiles are active: local
+2021-12-17 20:08:55.157  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 20:08:55.873  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 696ms. Found 46 repository interfaces.
+2021-12-17 20:08:55.984  INFO 11152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bab06e88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 20:08:56.102  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8484 (http)
+2021-12-17 20:08:56.105  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-17 20:08:56.105  INFO 11152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-12-17 20:08:56.143  INFO 11152 --- [restartedMain] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring embedded WebApplicationContext
+2021-12-17 20:08:56.144  INFO 11152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2900 ms
+2021-12-17 20:08:56.327  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2021-12-17 20:08:57.107  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2021-12-17 20:08:57.146  INFO 11152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 20:08:57.164  INFO 11152 --- [restartedMain] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2021-12-17 20:08:57.574  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+2021-12-17 20:08:57.575  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQLSpatialDialect
+2021-12-17 20:08:57.768  WARN 11152 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [hibernate.ejb.interceptor], use [hibernate.session_factory.interceptor] instead
+2021-12-17 20:08:59.564  INFO 11152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 20:09:01.133  WARN 11152 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 20:09:01.602  INFO 11152 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-17 20:09:01.632  INFO 11152 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8a8adfa8-4915-4a2e-8878-2c58aa9eb97e
+
+2021-12-17 20:09:01.647  INFO 11152 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@705b1098, org.springframework.security.web.context.SecurityContextPersistenceFilter@4da0f967, org.springframework.security.web.header.HeaderWriterFilter@69768191, org.springframework.web.filter.CorsFilter@55306fc7, org.springframework.security.web.authentication.logout.LogoutFilter@732d1df3, com.geoit.caem.apirest.security.JWTAuthorizationFilter@7f7ef58b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@255f5a6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ff29674, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b61e13f, org.springframework.security.web.session.SessionManagementFilter@516fa38a, org.springframework.security.web.access.ExceptionTranslationFilter@4c406f4a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@15cf5161]
+2021-12-17 20:09:01.755  INFO 11152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-17 20:09:01.760  INFO 11152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-17 20:09:01.892  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-17 20:09:01.918  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-17 20:09:01.953  INFO 11152 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-17 20:09:02.175  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMiMunicipioUsingGET_1
+2021-12-17 20:09:02.181  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_1
+2021-12-17 20:09:02.184  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_1
+2021-12-17 20:09:02.189  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_1
+2021-12-17 20:09:02.193  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_1
+2021-12-17 20:09:02.230  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_1
+2021-12-17 20:09:02.240  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_2
+2021-12-17 20:09:02.242  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_2
+2021-12-17 20:09:02.243  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_2
+2021-12-17 20:09:02.253  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCatalogosUsingGET_1
+2021-12-17 20:09:02.260  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_2
+2021-12-17 20:09:02.262  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSeccionesUsingGET_1
+2021-12-17 20:09:02.279  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_2
+2021-12-17 20:09:02.336  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8484 (http) with context path '/caem-api'
+2021-12-17 20:09:02.348  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Started App in 9.196 seconds (JVM running for 18469.605)
+2021-12-17 20:09:02.361  INFO 11152 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-17 20:09:14.982  INFO 11152 --- [Thread-84] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-17 20:09:14.993  INFO 11152 --- [Thread-84] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 20:09:14.997  INFO 11152 --- [Thread-84] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2021-12-17 20:09:15.046  INFO 11152 --- [Thread-84] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2021-12-17 20:09:16.079  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Starting App on DESKTOP-4PO1N20 with PID 11152 (D:\Proyectos\Caem\caem-api\target\classes started by Alfredo in D:\Proyectos\Caem\caem-api)
+2021-12-17 20:09:16.081  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : The following profiles are active: local
+2021-12-17 20:09:17.509  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 20:09:17.886  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 376ms. Found 46 repository interfaces.
+2021-12-17 20:09:18.058  INFO 11152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bab06e88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 20:09:18.213  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8484 (http)
+2021-12-17 20:09:18.214  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-17 20:09:18.214  INFO 11152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-12-17 20:09:18.336  INFO 11152 --- [restartedMain] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring embedded WebApplicationContext
+2021-12-17 20:09:18.345  INFO 11152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2247 ms
+2021-12-17 20:09:18.634  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2021-12-17 20:09:19.997  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2021-12-17 20:09:20.048  INFO 11152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 20:09:20.060  INFO 11152 --- [restartedMain] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2021-12-17 20:09:21.873  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+2021-12-17 20:09:21.873  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQLSpatialDialect
+2021-12-17 20:09:22.068  WARN 11152 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [hibernate.ejb.interceptor], use [hibernate.session_factory.interceptor] instead
+2021-12-17 20:09:23.252  INFO 11152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 20:09:24.957  WARN 11152 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 20:09:25.426  INFO 11152 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-17 20:09:25.513  INFO 11152 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f3021da5-1d8a-44ed-bc2a-122c18b72c30
+
+2021-12-17 20:09:25.564  INFO 11152 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@352db0a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@5586f93a, org.springframework.security.web.header.HeaderWriterFilter@1cdf8b9e, org.springframework.web.filter.CorsFilter@c9e469, org.springframework.security.web.authentication.logout.LogoutFilter@68d95910, com.geoit.caem.apirest.security.JWTAuthorizationFilter@60cde7d2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49af0d95, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@294cfc45, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b3c46bd, org.springframework.security.web.session.SessionManagementFilter@44f0b488, org.springframework.security.web.access.ExceptionTranslationFilter@476b6bd4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cd0995c]
+2021-12-17 20:09:25.645  INFO 11152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-17 20:09:25.656  INFO 11152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-17 20:09:25.862  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-17 20:09:25.919  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-17 20:09:25.987  INFO 11152 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-17 20:09:26.693  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMiMunicipioUsingGET_1
+2021-12-17 20:09:26.705  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_1
+2021-12-17 20:09:26.710  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_1
+2021-12-17 20:09:26.712  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_1
+2021-12-17 20:09:26.721  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_1
+2021-12-17 20:09:26.753  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_1
+2021-12-17 20:09:26.775  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_2
+2021-12-17 20:09:26.783  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_2
+2021-12-17 20:09:26.787  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_2
+2021-12-17 20:09:26.796  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCatalogosUsingGET_1
+2021-12-17 20:09:26.824  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_2
+2021-12-17 20:09:26.828  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSeccionesUsingGET_1
+2021-12-17 20:09:26.901  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_2
+2021-12-17 20:09:27.040  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8484 (http) with context path '/caem-api'
+2021-12-17 20:09:27.170  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Started App in 11.177 seconds (JVM running for 18494.427)
+2021-12-17 20:09:27.189  INFO 11152 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-17 20:29:56.469  INFO 11152 --- [Thread-90] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-17 20:29:56.478  INFO 11152 --- [Thread-90] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 20:29:56.482  INFO 11152 --- [Thread-90] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2021-12-17 20:29:56.503  INFO 11152 --- [Thread-90] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2021-12-17 20:30:02.953  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Starting App on DESKTOP-4PO1N20 with PID 11152 (D:\Proyectos\Caem\caem-api\target\classes started by Alfredo in D:\Proyectos\Caem\caem-api)
+2021-12-17 20:30:02.955  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : The following profiles are active: local
+2021-12-17 20:30:03.251  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 20:30:03.252  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 repository interfaces.
+2021-12-17 20:30:03.320  INFO 11152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bab06e88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 20:30:03.400  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8484 (http)
+2021-12-17 20:30:03.402  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-17 20:30:03.402  INFO 11152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-12-17 20:30:03.443  INFO 11152 --- [restartedMain] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring embedded WebApplicationContext
+2021-12-17 20:30:03.444  INFO 11152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 485 ms
+2021-12-17 20:30:03.499  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2021-12-17 20:30:04.321  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2021-12-17 20:30:04.334  INFO 11152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 20:30:04.337  INFO 11152 --- [restartedMain] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2021-12-17 20:30:04.343  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+2021-12-17 20:30:04.343  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQLSpatialDialect
+2021-12-17 20:30:04.367  WARN 11152 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [hibernate.ejb.interceptor], use [hibernate.session_factory.interceptor] instead
+2021-12-17 20:30:04.369  WARN 11152 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [com.geoit.caem.apirest.interceptors.HibernateInterceptor] as strategy [org.hibernate.Interceptor]
+2021-12-17 20:30:04.371  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2021-12-17 20:30:04.372  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2021-12-17 20:30:04.374  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-12-17 20:30:04.379  INFO 11152 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-17 20:30:04.384 ERROR 11152 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [com.geoit.caem.apirest.interceptors.HibernateInterceptor] as strategy [org.hibernate.Interceptor]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at com.geoit.caem.apirest.App.main(App.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+Caused by: org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [com.geoit.caem.apirest.interceptors.HibernateInterceptor] as strategy [org.hibernate.Interceptor]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:133) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:212) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:160) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:147) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:141) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryOptionsBuilder.determineInterceptor(SessionFactoryOptionsBuilder.java:534) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryOptionsBuilder.<init>(SessionFactoryOptionsBuilder.java:292) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.<init>(SessionFactoryBuilderImpl.java:53) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.internal.MetadataImpl.getSessionFactoryBuilder(MetadataImpl.java:153) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	... 21 common frames omitted
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [com.geoit.caem.apirest.interceptors.HibernateInterceptor]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:134) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:129) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	... 37 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : com.geoit.caem.apirest.interceptors.HibernateInterceptor
+	at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:210) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:589) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:398) ~[na:na]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:131) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	... 38 common frames omitted
+
+2021-12-17 20:30:18.880  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Starting App on DESKTOP-4PO1N20 with PID 11152 (D:\Proyectos\Caem\caem-api\target\classes started by Alfredo in D:\Proyectos\Caem\caem-api)
+2021-12-17 20:30:18.882  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : The following profiles are active: local
+2021-12-17 20:30:19.964  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 20:30:20.273  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 303ms. Found 46 repository interfaces.
+2021-12-17 20:30:20.373  INFO 11152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bab06e88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 20:30:20.472  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8484 (http)
+2021-12-17 20:30:20.473  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-17 20:30:20.474  INFO 11152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-12-17 20:30:20.507  INFO 11152 --- [restartedMain] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring embedded WebApplicationContext
+2021-12-17 20:30:20.508  INFO 11152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1622 ms
+2021-12-17 20:30:20.621  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2021-12-17 20:30:21.391  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2021-12-17 20:30:21.427  INFO 11152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 20:30:21.432  INFO 11152 --- [restartedMain] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2021-12-17 20:30:21.823  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+2021-12-17 20:30:21.824  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQLSpatialDialect
+2021-12-17 20:30:22.045  WARN 11152 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [hibernate.ejb.interceptor], use [hibernate.session_factory.interceptor] instead
+2021-12-17 20:30:23.333  INFO 11152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 20:30:24.729  WARN 11152 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 20:30:25.283  INFO 11152 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-17 20:30:25.328  INFO 11152 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1e6f129b-1b07-40f2-ab53-414375a510f0
+
+2021-12-17 20:30:25.511  INFO 11152 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@396fe9f7, org.springframework.security.web.context.SecurityContextPersistenceFilter@351547b, org.springframework.security.web.header.HeaderWriterFilter@1f0a1608, org.springframework.web.filter.CorsFilter@9c1703b, org.springframework.security.web.authentication.logout.LogoutFilter@6074717c, com.geoit.caem.apirest.security.JWTAuthorizationFilter@1fd495ef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c7668f6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3839d26, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f85c6d1, org.springframework.security.web.session.SessionManagementFilter@74d2f8c2, org.springframework.security.web.access.ExceptionTranslationFilter@5894c33, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ecf9e72]
+2021-12-17 20:30:25.737  INFO 11152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-17 20:30:25.763  INFO 11152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-17 20:30:26.316  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-17 20:30:26.331  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-17 20:30:26.372  INFO 11152 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-17 20:30:26.561  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMiMunicipioUsingGET_1
+2021-12-17 20:30:26.567  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_1
+2021-12-17 20:30:26.571  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_1
+2021-12-17 20:30:26.573  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_1
+2021-12-17 20:30:26.578  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_1
+2021-12-17 20:30:26.650  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_1
+2021-12-17 20:30:26.761  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_2
+2021-12-17 20:30:26.881  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_2
+2021-12-17 20:30:27.254  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_2
+2021-12-17 20:30:27.376  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCatalogosUsingGET_1
+2021-12-17 20:30:27.553  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_2
+2021-12-17 20:30:27.564  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSeccionesUsingGET_1
+2021-12-17 20:30:27.599  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_2
+2021-12-17 20:30:27.880  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8484 (http) with context path '/caem-api'
+2021-12-17 20:30:27.883  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Started App in 9.134 seconds (JVM running for 19755.139)
+2021-12-17 20:30:27.887  INFO 11152 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-17 20:30:32.774  INFO 11152 --- [Thread-96] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-17 20:30:32.779  INFO 11152 --- [Thread-96] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 20:30:32.781  INFO 11152 --- [Thread-96] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2021-12-17 20:30:32.793  INFO 11152 --- [Thread-96] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2021-12-17 20:30:33.904  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Starting App on DESKTOP-4PO1N20 with PID 11152 (D:\Proyectos\Caem\caem-api\target\classes started by Alfredo in D:\Proyectos\Caem\caem-api)
+2021-12-17 20:30:33.904  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : The following profiles are active: local
+2021-12-17 20:30:35.553  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 20:30:36.217  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 648ms. Found 46 repository interfaces.
+2021-12-17 20:30:36.440  INFO 11152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bab06e88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 20:30:36.614  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8484 (http)
+2021-12-17 20:30:36.617  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-17 20:30:36.621  INFO 11152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-12-17 20:30:36.840  INFO 11152 --- [restartedMain] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring embedded WebApplicationContext
+2021-12-17 20:30:36.843  INFO 11152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2934 ms
+2021-12-17 20:30:37.117  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2021-12-17 20:30:37.944  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2021-12-17 20:30:38.040  INFO 11152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 20:30:38.051  INFO 11152 --- [restartedMain] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2021-12-17 20:30:38.163  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+2021-12-17 20:30:38.165  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQLSpatialDialect
+2021-12-17 20:30:38.276  WARN 11152 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [hibernate.ejb.interceptor], use [hibernate.session_factory.interceptor] instead
+2021-12-17 20:30:39.188  INFO 11152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 20:30:40.340  WARN 11152 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 20:30:41.579  INFO 11152 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-17 20:30:41.808  INFO 11152 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8bd50cec-786a-40fc-bbc1-7edb263cc19c
+
+2021-12-17 20:30:41.880  INFO 11152 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47905c6c, org.springframework.security.web.context.SecurityContextPersistenceFilter@35f6790e, org.springframework.security.web.header.HeaderWriterFilter@74656835, org.springframework.web.filter.CorsFilter@72238ff, org.springframework.security.web.authentication.logout.LogoutFilter@59b34e48, com.geoit.caem.apirest.security.JWTAuthorizationFilter@7a9a661f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f70221b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@508bc700, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e0b200f, org.springframework.security.web.session.SessionManagementFilter@1e62fa7b, org.springframework.security.web.access.ExceptionTranslationFilter@f36b14a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10d7ff48]
+2021-12-17 20:30:42.025  INFO 11152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-17 20:30:42.034  INFO 11152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-17 20:30:42.294  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-17 20:30:42.320  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-17 20:30:42.384  INFO 11152 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-17 20:30:42.702  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMiMunicipioUsingGET_1
+2021-12-17 20:30:42.708  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_1
+2021-12-17 20:30:42.712  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_1
+2021-12-17 20:30:42.716  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_1
+2021-12-17 20:30:42.825  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_1
+2021-12-17 20:30:43.083  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_1
+2021-12-17 20:30:43.110  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_2
+2021-12-17 20:30:43.138  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_2
+2021-12-17 20:30:43.156  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_2
+2021-12-17 20:30:43.191  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCatalogosUsingGET_1
+2021-12-17 20:30:43.213  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_2
+2021-12-17 20:30:43.328  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSeccionesUsingGET_1
+2021-12-17 20:30:43.415  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_2
+2021-12-17 20:30:43.530  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8484 (http) with context path '/caem-api'
+2021-12-17 20:30:43.559  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Started App in 9.715 seconds (JVM running for 19770.816)
+2021-12-17 20:30:43.584  INFO 11152 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-17 20:30:56.229  INFO 11152 --- [Thread-111] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-17 20:30:56.236  INFO 11152 --- [Thread-111] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 20:30:56.237  INFO 11152 --- [Thread-111] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2021-12-17 20:30:56.248  INFO 11152 --- [Thread-111] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2021-12-17 20:30:57.039  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Starting App on DESKTOP-4PO1N20 with PID 11152 (D:\Proyectos\Caem\caem-api\target\classes started by Alfredo in D:\Proyectos\Caem\caem-api)
+2021-12-17 20:30:57.040  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : The following profiles are active: local
+2021-12-17 20:30:58.506  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 20:30:59.189  INFO 11152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 678ms. Found 46 repository interfaces.
+2021-12-17 20:30:59.426  INFO 11152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bab06e88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 20:30:59.568  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8484 (http)
+2021-12-17 20:30:59.569  INFO 11152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-17 20:30:59.570  INFO 11152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-12-17 20:30:59.622  INFO 11152 --- [restartedMain] o.a.c.c.C.[.[localhost].[/caem-api]      : Initializing Spring embedded WebApplicationContext
+2021-12-17 20:30:59.630  INFO 11152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2586 ms
+2021-12-17 20:30:59.934  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2021-12-17 20:31:02.338  INFO 11152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2021-12-17 20:31:02.380  INFO 11152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 20:31:02.385  INFO 11152 --- [restartedMain] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2021-12-17 20:31:02.558  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+2021-12-17 20:31:02.559  INFO 11152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.spatial.dialect.mysql.MySQLSpatialDialect
+2021-12-17 20:31:02.816  WARN 11152 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [hibernate.ejb.interceptor], use [hibernate.session_factory.interceptor] instead
+2021-12-17 20:31:03.659  INFO 11152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 20:31:05.566  WARN 11152 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 20:31:05.900  INFO 11152 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-17 20:31:05.929  INFO 11152 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ef2eb82d-0ba6-4e58-ab58-daa31dd6660d
+
+2021-12-17 20:31:05.969  INFO 11152 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26ffed0e, org.springframework.security.web.context.SecurityContextPersistenceFilter@e22d2d4, org.springframework.security.web.header.HeaderWriterFilter@26138dc2, org.springframework.web.filter.CorsFilter@551e245f, org.springframework.security.web.authentication.logout.LogoutFilter@2deaa38a, com.geoit.caem.apirest.security.JWTAuthorizationFilter@30c8120a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ef71628, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54b0eba9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ac1a85b, org.springframework.security.web.session.SessionManagementFilter@13ad51c4, org.springframework.security.web.access.ExceptionTranslationFilter@5db7a058, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4e6a723c]
+2021-12-17 20:31:06.105  INFO 11152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-17 20:31:06.130  INFO 11152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-17 20:31:06.377  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-17 20:31:06.381  INFO 11152 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-17 20:31:06.408  INFO 11152 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-17 20:31:06.540  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMiMunicipioUsingGET_1
+2021-12-17 20:31:06.544  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_1
+2021-12-17 20:31:06.546  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_1
+2021-12-17 20:31:06.547  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_1
+2021-12-17 20:31:06.550  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_1
+2021-12-17 20:31:06.569  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_1
+2021-12-17 20:31:06.578  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: EliminarRecursoUsingDELETE_2
+2021-12-17 20:31:06.580  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InsertarRecursoAccionGobUsingPOST_2
+2021-12-17 20:31:06.583  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cambiarTituloRcursoUsingPUT_2
+2021-12-17 20:31:06.593  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCatalogosUsingGET_1
+2021-12-17 20:31:06.601  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRecursosUsingGET_2
+2021-12-17 20:31:06.604  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSeccionesUsingGET_1
+2021-12-17 20:31:06.623  INFO 11152 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertarLinkRecursosUsingPOST_2
+2021-12-17 20:31:06.649  INFO 11152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8484 (http) with context path '/caem-api'
+2021-12-17 20:31:06.650  INFO 11152 --- [restartedMain] com.geoit.caem.apirest.App               : Started App in 9.699 seconds (JVM running for 19793.907)
+2021-12-17 20:31:06.654  INFO 11152 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
