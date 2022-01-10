@@ -72,10 +72,10 @@ public class ApiTestController {
         Account aReceived = restTemplate.getRestTemplateSingleton().postForObject(urlMockApi + "account", request, Account.class);
 
         String acc = "";
-        if(accountSaved.getId()<10){
-            acc = "00" + accountSaved.getId();
-        } else if (accountSaved.getId() < 100){
-            acc = "0" + accountSaved.getId();
+        if(aReceived.getId()<10){
+            acc = "00" + aReceived.getId();
+        } else if (aReceived.getId() < 100){
+            acc = "0" + aReceived.getId();
         }
         accountSaved.setAccount(aReceived.getAccount() + acc);
 
